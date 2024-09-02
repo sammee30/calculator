@@ -1,5 +1,6 @@
 from calc_func import do_sub, do_add
 from multiply import do_multiply
+from area import calculate_area
 
 def main():
     print("Wellcome to the calculator")
@@ -8,6 +9,7 @@ def main():
           1. Add
           2. Subtract
           3. Multiply
+          4. Area
 """)
     
     user_input = input("Select the function : ")
@@ -21,6 +23,8 @@ def main():
         result = do_sub(a,b)
     elif user_input == "3":
         result = do_multiply(a,b)
+    elif user_input == "4":
+        result = calculate_area(a,b)
     
     print('Result: ', result)
 
